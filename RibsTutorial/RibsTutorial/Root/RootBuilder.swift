@@ -2,7 +2,7 @@
 //  RootBuilder.swift
 //  RibsTutorial
 //
-//  Created by injun on 2021/07/22.
+//  Created by injun on 2021/07/23.
 //
 
 import RIBs
@@ -29,7 +29,7 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
         super.init(dependency: dependency)
     }
 
-    func build() -> LaunchRouting  {
+    func build() -> LaunchRouting {
         let component = RootComponent(dependency: dependency)
         let viewController = RootViewController()
         let interactor = RootInteractor(presenter: viewController)

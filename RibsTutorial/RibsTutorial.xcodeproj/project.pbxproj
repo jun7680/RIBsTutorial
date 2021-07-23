@@ -9,22 +9,16 @@
 /* Begin PBXBuildFile section */
 		092245C97A901661C7496BF8 /* Pods_RibsTutorial_RibsTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CB4F2360394FDCE1EFD0D2 /* Pods_RibsTutorial_RibsTutorialUITests.framework */; };
 		28D34DE20FEBA6D7F940D8D0 /* Pods_RibsTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D286170E2CBA221F2DC076 /* Pods_RibsTutorial.framework */; };
-		5789F09526AA476D0094659F /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F09126AA476D0094659F /* LoggedOutRouter.swift */; };
-		5789F09626AA476D0094659F /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F09226AA476D0094659F /* LoggedOutViewController.swift */; };
-		5789F09726AA476D0094659F /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F09326AA476D0094659F /* LoggedOutBuilder.swift */; };
-		5789F09826AA476D0094659F /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F09426AA476D0094659F /* LoggedOutInteractor.swift */; };
+		5789F0A726AA50C00094659F /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F0A326AA50C00094659F /* RootRouter.swift */; };
+		5789F0A826AA50C00094659F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F0A426AA50C00094659F /* RootViewController.swift */; };
+		5789F0A926AA50C00094659F /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F0A526AA50C00094659F /* RootBuilder.swift */; };
+		5789F0AA26AA50C00094659F /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789F0A626AA50C00094659F /* RootInteractor.swift */; };
 		57B02F5C26A947460094F701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F5B26A947460094F701 /* AppDelegate.swift */; };
 		57B02F5E26A947460094F701 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F5D26A947460094F701 /* SceneDelegate.swift */; };
-		57B02F6026A947460094F701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F5F26A947460094F701 /* ViewController.swift */; };
-		57B02F6326A947460094F701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B02F6126A947460094F701 /* Main.storyboard */; };
 		57B02F6526A947480094F701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B02F6426A947480094F701 /* Assets.xcassets */; };
 		57B02F6826A947480094F701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B02F6626A947480094F701 /* LaunchScreen.storyboard */; };
 		57B02F7326A947480094F701 /* RibsTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F7226A947480094F701 /* RibsTutorialTests.swift */; };
 		57B02F7E26A947480094F701 /* RibsTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F7D26A947480094F701 /* RibsTutorialUITests.swift */; };
-		57B02F9026A94BD80094F701 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F8C26A94BD80094F701 /* RootRouter.swift */; };
-		57B02F9126A94BD80094F701 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F8D26A94BD80094F701 /* RootViewController.swift */; };
-		57B02F9226A94BD80094F701 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F8E26A94BD80094F701 /* RootBuilder.swift */; };
-		57B02F9326A94BD80094F701 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F8F26A94BD80094F701 /* RootInteractor.swift */; };
 		57B02F9626A94CBB0094F701 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F9526A94CBB0094F701 /* AppComponent.swift */; };
 		FAA526683EA78D2F0BBE61A5 /* Pods_RibsTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218C29C24A82EC19CEE77F77 /* Pods_RibsTutorialTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,15 +46,13 @@
 		14D286170E2CBA221F2DC076 /* Pods_RibsTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RibsTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		218C29C24A82EC19CEE77F77 /* Pods_RibsTutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RibsTutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A4DC909DAEAE10549498D3 /* Pods-RibsTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RibsTutorialTests.release.xcconfig"; path = "Target Support Files/Pods-RibsTutorialTests/Pods-RibsTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
-		5789F09126AA476D0094659F /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
-		5789F09226AA476D0094659F /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
-		5789F09326AA476D0094659F /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
-		5789F09426AA476D0094659F /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		5789F0A326AA50C00094659F /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		5789F0A426AA50C00094659F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5789F0A526AA50C00094659F /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		5789F0A626AA50C00094659F /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		57B02F5826A947460094F701 /* RibsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RibsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B02F5B26A947460094F701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B02F5D26A947460094F701 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57B02F5F26A947460094F701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57B02F6226A947460094F701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57B02F6426A947480094F701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B02F6726A947480094F701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57B02F6926A947480094F701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,10 +62,6 @@
 		57B02F7926A947480094F701 /* RibsTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibsTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B02F7D26A947480094F701 /* RibsTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibsTutorialUITests.swift; sourceTree = "<group>"; };
 		57B02F7F26A947480094F701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57B02F8C26A94BD80094F701 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		57B02F8D26A94BD80094F701 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		57B02F8E26A94BD80094F701 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
-		57B02F8F26A94BD80094F701 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		57B02F9526A94CBB0094F701 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		69D6C7E948D79570EDCF8E23 /* Pods-RibsTutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RibsTutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-RibsTutorialTests/Pods-RibsTutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		946248D019EEB0449156EA07 /* Pods-RibsTutorial-RibsTutorialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RibsTutorial-RibsTutorialUITests.debug.xcconfig"; path = "Target Support Files/Pods-RibsTutorial-RibsTutorialUITests/Pods-RibsTutorial-RibsTutorialUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,15 +107,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5789F09026AA474D0094659F /* LoggedOut */ = {
+		5789F0A226AA50A90094659F /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				5789F09126AA476D0094659F /* LoggedOutRouter.swift */,
-				5789F09226AA476D0094659F /* LoggedOutViewController.swift */,
-				5789F09326AA476D0094659F /* LoggedOutBuilder.swift */,
-				5789F09426AA476D0094659F /* LoggedOutInteractor.swift */,
+				5789F0A326AA50C00094659F /* RootRouter.swift */,
+				5789F0A426AA50C00094659F /* RootViewController.swift */,
+				5789F0A526AA50C00094659F /* RootBuilder.swift */,
+				5789F0A626AA50C00094659F /* RootInteractor.swift */,
 			);
-			path = LoggedOut;
+			path = Root;
 			sourceTree = "<group>";
 		};
 		57B02F4F26A947460094F701 = {
@@ -155,13 +143,10 @@
 		57B02F5A26A947460094F701 /* RibsTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				5789F09026AA474D0094659F /* LoggedOut */,
-				57B02F9426A94BDF0094F701 /* Root */,
+				5789F0A226AA50A90094659F /* Root */,
 				57B02F5B26A947460094F701 /* AppDelegate.swift */,
 				57B02F9526A94CBB0094F701 /* AppComponent.swift */,
 				57B02F5D26A947460094F701 /* SceneDelegate.swift */,
-				57B02F5F26A947460094F701 /* ViewController.swift */,
-				57B02F6126A947460094F701 /* Main.storyboard */,
 				57B02F6426A947480094F701 /* Assets.xcassets */,
 				57B02F6626A947480094F701 /* LaunchScreen.storyboard */,
 				57B02F6926A947480094F701 /* Info.plist */,
@@ -185,17 +170,6 @@
 				57B02F7F26A947480094F701 /* Info.plist */,
 			);
 			path = RibsTutorialUITests;
-			sourceTree = "<group>";
-		};
-		57B02F9426A94BDF0094F701 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				57B02F8C26A94BD80094F701 /* RootRouter.swift */,
-				57B02F8D26A94BD80094F701 /* RootViewController.swift */,
-				57B02F8E26A94BD80094F701 /* RootBuilder.swift */,
-				57B02F8F26A94BD80094F701 /* RootInteractor.swift */,
-			);
-			path = Root;
 			sourceTree = "<group>";
 		};
 		5A817627E0250EFD2E0C5B59 /* Pods */ = {
@@ -321,7 +295,6 @@
 			files = (
 				57B02F6826A947480094F701 /* LaunchScreen.storyboard in Resources */,
 				57B02F6526A947480094F701 /* Assets.xcassets in Resources */,
-				57B02F6326A947460094F701 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,18 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B02F9126A94BD80094F701 /* RootViewController.swift in Sources */,
-				5789F09726AA476D0094659F /* LoggedOutBuilder.swift in Sources */,
+				5789F0A826AA50C00094659F /* RootViewController.swift in Sources */,
+				5789F0A726AA50C00094659F /* RootRouter.swift in Sources */,
+				5789F0AA26AA50C00094659F /* RootInteractor.swift in Sources */,
 				57B02F9626A94CBB0094F701 /* AppComponent.swift in Sources */,
-				57B02F9026A94BD80094F701 /* RootRouter.swift in Sources */,
-				57B02F9326A94BD80094F701 /* RootInteractor.swift in Sources */,
-				5789F09826AA476D0094659F /* LoggedOutInteractor.swift in Sources */,
-				5789F09526AA476D0094659F /* LoggedOutRouter.swift in Sources */,
-				57B02F6026A947460094F701 /* ViewController.swift in Sources */,
 				57B02F5C26A947460094F701 /* AppDelegate.swift in Sources */,
 				57B02F5E26A947460094F701 /* SceneDelegate.swift in Sources */,
-				57B02F9226A94BD80094F701 /* RootBuilder.swift in Sources */,
-				5789F09626AA476D0094659F /* LoggedOutViewController.swift in Sources */,
+				5789F0A926AA50C00094659F /* RootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		57B02F6126A947460094F701 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57B02F6226A947460094F701 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57B02F6626A947480094F701 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

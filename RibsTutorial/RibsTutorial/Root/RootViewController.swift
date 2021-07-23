@@ -2,13 +2,12 @@
 //  RootViewController.swift
 //  RibsTutorial
 //
-//  Created by injun on 2021/07/22.
+//  Created by injun on 2021/07/23.
 //
 
 import RIBs
 import RxSwift
 import UIKit
-
 
 protocol RootPresentableListener: AnyObject {
     // TODO: Declare properties and methods that the view controller can invoke to perform
@@ -19,8 +18,4 @@ protocol RootPresentableListener: AnyObject {
 final class RootViewController: UIViewController, RootPresentable, RootViewControllable {
 
     weak var listener: RootPresentableListener?
-    
-    override func viewDidLoad() {
-        self.view.backgroundColor = .white
-    }
 }

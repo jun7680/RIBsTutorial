@@ -2,7 +2,7 @@
 //  RootInteractor.swift
 //  RibsTutorial
 //
-//  Created by injun on 2021/07/22.
+//  Created by injun on 2021/07/23.
 //
 
 import RIBs
