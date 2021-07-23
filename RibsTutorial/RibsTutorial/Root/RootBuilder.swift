@@ -30,9 +30,18 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
     }
 
     func build() -> LaunchRouting {
-        let component = RootComponent(dependency: dependency)
         let viewController = RootViewController()
+        let component = RootComponent(dependency: dependency)
         let interactor = RootInteractor(presenter: viewController)
-        return RootRouter(interactor: interactor, viewController: viewController)
+        let loggedOutBuilder = LoggedOutBuilder(dependency: component)
+        let loggedInBuilder = LoggedInBuilder(dependency: component)
+        return RootRouter(interactor: interactor, viewController: viewController, loggedOutBuilder: loggedOutBuilder, loggedInBuilder: loggedInBuilder)
     }
+}
+
+extension RootComponent: LoggedOutDependency {
+    
+}
+extension RootComponent: LoggedInDependency {
+    
 }
