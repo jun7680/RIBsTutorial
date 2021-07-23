@@ -18,6 +18,18 @@ protocol OffGameDependency: Dependency {
 final class OffGameComponent: Component<OffGameDependency> {
 
     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
+    var player1Name: String {
+        return dependency.player1Name
+    }
+
+    var player2Name: String {
+        return dependency.player2Name
+    }
+
+    var scoreStream: ScoreStream {
+        return dependency.scoreStream
+    }
+
 }
 
 // MARK: - Builder
