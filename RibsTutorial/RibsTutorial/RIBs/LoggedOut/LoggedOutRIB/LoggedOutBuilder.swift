@@ -34,6 +34,9 @@ final class LoggedOutBuilder: Builder<LoggedOutDependency>, LoggedOutBuildable {
         let viewController = LoggedOutViewController()
         let interactor = LoggedOutInteractor(presenter: viewController)
         interactor.listener = listener
-        return LoggedOutRouter(interactor: interactor, viewController: viewController)
+        let loginPageValidationBuilder = LoginPageBuilder(dependency: component)
+        return LoggedOutRouter(interactor: interactor,
+                               viewController: viewController,
+                               loginPageValidationBuilder: loginPageValidationBuilder)
     }
 }

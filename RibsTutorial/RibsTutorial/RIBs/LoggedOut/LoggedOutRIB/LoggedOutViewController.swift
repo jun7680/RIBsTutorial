@@ -18,7 +18,7 @@ protocol LoggedOutPresentableListener: AnyObject {
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
 
     weak var listener: LoggedOutPresentableListener?
-    
+    private let disposeBag = DisposeBag()
     private let titleLabel = UILabel().then {
         $0.backgroundColor = .clear
         $0.textColor = .black
@@ -38,6 +38,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        bindUI()
     }
     
     private func setUI() {
@@ -75,6 +76,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
             .drive(with: self) { owner, _ in
                 owner.listener?.nextPage()
             }
+            .disposed(by: disposeBag)
     }
     
 }
