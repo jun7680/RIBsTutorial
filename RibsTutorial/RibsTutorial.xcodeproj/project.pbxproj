@@ -9,9 +9,19 @@
 /* Begin PBXBuildFile section */
 		092245C97A901661C7496BF8 /* Pods_RibsTutorial_RibsTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CB4F2360394FDCE1EFD0D2 /* Pods_RibsTutorial_RibsTutorialUITests.framework */; };
 		28D34DE20FEBA6D7F940D8D0 /* Pods_RibsTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D286170E2CBA221F2DC076 /* Pods_RibsTutorial.framework */; };
+		574A111126B77C4B0073E4A7 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 574A111026B77C4B0073E4A7 /* RxDataSources */; };
 		574A29A426AA8A87002A72F7 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 574A29A326AA8A87002A72F7 /* RIBs */; };
 		574A29A726AA8B51002A72F7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 574A29A626AA8B51002A72F7 /* SnapKit */; };
 		574A29AA26AA8B7F002A72F7 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 574A29A926AA8B7F002A72F7 /* Then */; };
+		5766F9E326B3CD0800596CA9 /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9DF26B3CD0800596CA9 /* LoggedOutRouter.swift */; };
+		5766F9E426B3CD0800596CA9 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9E026B3CD0800596CA9 /* LoggedOutViewController.swift */; };
+		5766F9E526B3CD0800596CA9 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9E126B3CD0800596CA9 /* LoggedOutBuilder.swift */; };
+		5766F9E626B3CD0800596CA9 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9E226B3CD0800596CA9 /* LoggedOutInteractor.swift */; };
+		5766F9EC26B3CD2500596CA9 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9E826B3CD2500596CA9 /* RootRouter.swift */; };
+		5766F9ED26B3CD2500596CA9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9E926B3CD2500596CA9 /* RootViewController.swift */; };
+		5766F9EE26B3CD2500596CA9 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9EA26B3CD2500596CA9 /* RootBuilder.swift */; };
+		5766F9EF26B3CD2500596CA9 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9EB26B3CD2500596CA9 /* RootInteractor.swift */; };
+		5766F9F126B3CD3400596CA9 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F9F026B3CD3400596CA9 /* RootComponent+LoggedOut.swift */; };
 		57B02F5C26A947460094F701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F5B26A947460094F701 /* AppDelegate.swift */; };
 		57B02F5E26A947460094F701 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B02F5D26A947460094F701 /* SceneDelegate.swift */; };
 		57B02F6526A947480094F701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B02F6426A947480094F701 /* Assets.xcassets */; };
@@ -45,6 +55,15 @@
 		14D286170E2CBA221F2DC076 /* Pods_RibsTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RibsTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		218C29C24A82EC19CEE77F77 /* Pods_RibsTutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RibsTutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A4DC909DAEAE10549498D3 /* Pods-RibsTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RibsTutorialTests.release.xcconfig"; path = "Target Support Files/Pods-RibsTutorialTests/Pods-RibsTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
+		5766F9DF26B3CD0800596CA9 /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		5766F9E026B3CD0800596CA9 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		5766F9E126B3CD0800596CA9 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		5766F9E226B3CD0800596CA9 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		5766F9E826B3CD2500596CA9 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		5766F9E926B3CD2500596CA9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5766F9EA26B3CD2500596CA9 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		5766F9EB26B3CD2500596CA9 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		5766F9F026B3CD3400596CA9 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
 		57B02F5826A947460094F701 /* RibsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RibsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B02F5B26A947460094F701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B02F5D26A947460094F701 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +91,7 @@
 				574A29A726AA8B51002A72F7 /* SnapKit in Frameworks */,
 				574A29A426AA8A87002A72F7 /* RIBs in Frameworks */,
 				28D34DE20FEBA6D7F940D8D0 /* Pods_RibsTutorial.framework in Frameworks */,
+				574A111126B77C4B0073E4A7 /* RxDataSources in Frameworks */,
 				574A29AA26AA8B7F002A72F7 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +125,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5766F9DD26B3CCB600596CA9 /* RIBs */ = {
+			isa = PBXGroup;
+			children = (
+				5766F9E726B3CD1B00596CA9 /* RootRIB */,
+				5766F9DE26B3CCD100596CA9 /* LoggedOut */,
+			);
+			path = RIBs;
+			sourceTree = "<group>";
+		};
+		5766F9DE26B3CCD100596CA9 /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				5766F9DF26B3CD0800596CA9 /* LoggedOutRouter.swift */,
+				5766F9E026B3CD0800596CA9 /* LoggedOutViewController.swift */,
+				5766F9E126B3CD0800596CA9 /* LoggedOutBuilder.swift */,
+				5766F9E226B3CD0800596CA9 /* LoggedOutInteractor.swift */,
+			);
+			path = LoggedOut;
+			sourceTree = "<group>";
+		};
+		5766F9E726B3CD1B00596CA9 /* RootRIB */ = {
+			isa = PBXGroup;
+			children = (
+				5766F9E826B3CD2500596CA9 /* RootRouter.swift */,
+				5766F9E926B3CD2500596CA9 /* RootViewController.swift */,
+				5766F9EA26B3CD2500596CA9 /* RootBuilder.swift */,
+				5766F9EB26B3CD2500596CA9 /* RootInteractor.swift */,
+				5766F9F026B3CD3400596CA9 /* RootComponent+LoggedOut.swift */,
+			);
+			path = RootRIB;
+			sourceTree = "<group>";
+		};
 		57B02F4F26A947460094F701 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +182,7 @@
 		57B02F5A26A947460094F701 /* RibsTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				5766F9DD26B3CCB600596CA9 /* RIBs */,
 				57B02F5B26A947460094F701 /* AppDelegate.swift */,
 				57B02F9526A94CBB0094F701 /* AppComponent.swift */,
 				57B02F5D26A947460094F701 /* SceneDelegate.swift */,
@@ -192,6 +245,7 @@
 				574A29A326AA8A87002A72F7 /* RIBs */,
 				574A29A626AA8B51002A72F7 /* SnapKit */,
 				574A29A926AA8B7F002A72F7 /* Then */,
+				574A111026B77C4B0073E4A7 /* RxDataSources */,
 			);
 			productName = RibsTutorial;
 			productReference = 57B02F5826A947460094F701 /* RibsTutorial.app */;
@@ -270,6 +324,7 @@
 				574A29A226AA8A87002A72F7 /* XCRemoteSwiftPackageReference "RIBs" */,
 				574A29A526AA8B51002A72F7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				574A29A826AA8B7F002A72F7 /* XCRemoteSwiftPackageReference "Then" */,
+				574A110F26B77C4B0073E4A7 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = 57B02F5926A947460094F701 /* Products */;
 			projectDirPath = "";
@@ -382,9 +437,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5766F9EC26B3CD2500596CA9 /* RootRouter.swift in Sources */,
 				57B02F9626A94CBB0094F701 /* AppComponent.swift in Sources */,
+				5766F9EF26B3CD2500596CA9 /* RootInteractor.swift in Sources */,
+				5766F9ED26B3CD2500596CA9 /* RootViewController.swift in Sources */,
+				5766F9F126B3CD3400596CA9 /* RootComponent+LoggedOut.swift in Sources */,
 				57B02F5C26A947460094F701 /* AppDelegate.swift in Sources */,
+				5766F9E526B3CD0800596CA9 /* LoggedOutBuilder.swift in Sources */,
 				57B02F5E26A947460094F701 /* SceneDelegate.swift in Sources */,
+				5766F9E326B3CD0800596CA9 /* LoggedOutRouter.swift in Sources */,
+				5766F9EE26B3CD2500596CA9 /* RootBuilder.swift in Sources */,
+				5766F9E626B3CD0800596CA9 /* LoggedOutInteractor.swift in Sources */,
+				5766F9E426B3CD0800596CA9 /* LoggedOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +783,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		574A110F26B77C4B0073E4A7 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		574A29A226AA8A87002A72F7 /* XCRemoteSwiftPackageReference "RIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uber/RIBs";
@@ -746,6 +818,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		574A111026B77C4B0073E4A7 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 574A110F26B77C4B0073E4A7 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
 		574A29A326AA8A87002A72F7 /* RIBs */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 574A29A226AA8A87002A72F7 /* XCRemoteSwiftPackageReference "RIBs" */;

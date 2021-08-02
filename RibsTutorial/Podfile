@@ -7,7 +7,7 @@ target 'RibsTutorial' do
 
   # Pods for RibsTutorial
 
-
+  
   target 'RibsTutorialTests' do
     inherit! :search_paths
     # Pods for testing
