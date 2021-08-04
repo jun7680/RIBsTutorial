@@ -24,7 +24,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
         $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 18)
         $0.textAlignment = .left
-        $0.text = "testtest"
+        $0.text = "Login"
     }
     private let nextButton = UIButton().then {
         $0.setTitle("next", for: .normal)
@@ -33,6 +33,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
     }
     
     override func viewDidLoad() {
@@ -61,6 +62,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
 
         titleLabel.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(padding)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(logoTopPadding)
         }
         nextButton.snp.makeConstraints {
             $0.height.equalTo(buttonHeight)
@@ -71,6 +73,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     }
     
     private func bindUI() {
+        
         nextButton.rx.tap
             .asDriver()
             .drive(with: self) { owner, _ in

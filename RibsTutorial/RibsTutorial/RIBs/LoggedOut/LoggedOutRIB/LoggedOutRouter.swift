@@ -12,7 +12,7 @@ protocol LoggedOutInteractable: Interactable, LoginPageListener {
     var listener: LoggedOutListener? { get set }
 }
 
-protocol LoggedOutViewControllable: ViewControllable {
+protocol LoggedOutViewControllable: IjViewControllerable {
 }
 
 final class LoggedOutRouter: ViewableRouter<LoggedOutInteractable, LoggedOutViewControllable> {
@@ -34,8 +34,16 @@ extension LoggedOutRouter: LoggedOutRouting {
     
     func nextPage() {
         let routing = loginPageValidationBuilder.build(withListener: interactor)
-        self.loginPageValidationRouting = routing
+        self.loginPageValidationRouting = routing        
         attachChild(routing)
-        viewController.uiviewController.present(routing.viewControllable.uiviewController, animated: true, completion: nil)
+        viewController.pushVC(viewController: routing.viewControllable, animated: true)
     }
+    
+    func previous() {
+        print("3")
+        guard let routing = loginPageValidationRouting else { return }
+        viewController.popVC(viewController: routing.viewControllable, animated: true)
+        detachChild(routing)
+        self.loginPageValidationRouting = nil
+    }    
 }

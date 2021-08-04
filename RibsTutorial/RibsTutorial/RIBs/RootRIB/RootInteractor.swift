@@ -10,6 +10,7 @@ import RxSwift
 
 protocol RootRouting: ViewableRouting {
     func rootToLoggedOut()
+    func rootToMainView()
 }
 
 protocol RootPresentable: Presentable {
@@ -19,7 +20,7 @@ protocol RootPresentable: Presentable {
 protocol RootListener: AnyObject {
 }
 
-final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteractable, RootPresentableListener {
+final class RootInteractor: PresentableInteractor<RootPresentable>, RootPresentableListener {
 
     weak var router: RootRouting?
     weak var listener: RootListener?
@@ -37,5 +38,13 @@ final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteract
 
     override func willResignActive() {
         super.willResignActive()
+    }
+}
+
+
+extension RootInteractor: RootInteractable {
+    func goToMainView() {
+        print("goto main3")
+        router?.rootToMainView()
     }
 }

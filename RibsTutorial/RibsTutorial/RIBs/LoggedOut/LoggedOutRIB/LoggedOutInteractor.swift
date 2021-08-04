@@ -10,6 +10,7 @@ import RxSwift
 
 protocol LoggedOutRouting: ViewableRouting {
     func nextPage()
+    func previous()    
 }
 
 protocol LoggedOutPresentable: Presentable {
@@ -17,6 +18,7 @@ protocol LoggedOutPresentable: Presentable {
 }
 
 protocol LoggedOutListener: AnyObject {
+    func goToMainView()
 }
 
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable {
@@ -39,7 +41,16 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
 }
 
 extension LoggedOutInteractor: LoggedOutPresentableListener {
+    func previous() {
+        print("4")
+        router?.previous()
+    }
     func nextPage() {
         router?.nextPage()
-    }    
+    }
+    
+    func goToMainView() {
+        router?.previous()
+        listener?.goToMainView()
+    }
 }

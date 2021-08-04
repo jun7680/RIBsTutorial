@@ -13,8 +13,7 @@ protocol LoginPageDependency: Dependency {
 }
 
 final class LoginPageComponent: Component<LoginPageDependency> {
-
-    // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
+    
 }
 
 // MARK: - Builder

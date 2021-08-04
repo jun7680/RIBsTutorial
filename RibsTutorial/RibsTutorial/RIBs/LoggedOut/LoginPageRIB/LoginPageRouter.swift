@@ -12,13 +12,12 @@ protocol LoginPageInteractable: Interactable {
     var listener: LoginPageListener? { get set }
 }
 
-protocol LoginPageViewControllable: ViewControllable {
-    // TODO: Declare methods the router invokes to manipulate the view hierarchy.
+protocol LoginPageViewControllable: IjViewControllerable {
+    
 }
 
 final class LoginPageRouter: ViewableRouter<LoginPageInteractable, LoginPageViewControllable>, LoginPageRouting {
-
-    // TODO: Constructor inject child builder protocols to allow building children.
+    
     override init(interactor: LoginPageInteractable, viewController: LoginPageViewControllable) {
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self

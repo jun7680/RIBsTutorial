@@ -9,19 +9,22 @@ import RIBs
 import RxSwift
 
 protocol LoginPageRouting: ViewableRouting {
-    // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    
 }
 
 protocol LoginPagePresentable: Presentable {
+    //뷰가 바라보는 리스터
     var listener: LoginPagePresentableListener? { get set }
-    // TODO: Declare methods the interactor can invoke the presenter to present data.
+    
 }
 
+//Router가 바라보는 리스터
 protocol LoginPageListener: AnyObject {
-    // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+    func previous()
+    func goToMainView()
 }
 
-final class LoginPageInteractor: PresentableInteractor<LoginPagePresentable>, LoginPageInteractable, LoginPagePresentableListener {
+final class LoginPageInteractor: PresentableInteractor<LoginPagePresentable>, LoginPageInteractable {
 
     weak var router: LoginPageRouting?
     weak var listener: LoginPageListener?
@@ -35,11 +38,24 @@ final class LoginPageInteractor: PresentableInteractor<LoginPagePresentable>, Lo
 
     override func didBecomeActive() {
         super.didBecomeActive()
-        // TODO: Implement business logic here.
+        
     }
 
     override func willResignActive() {
         super.willResignActive()
-        // TODO: Pause any business logic.
+        
+    }
+    
+    
+}
+
+extension LoginPageInteractor: LoginPagePresentableListener {
+    func previous() {
+        print("2")
+        self.listener?.previous()
+    }
+    
+    func goToMainView() {
+        self.listener?.goToMainView()
     }
 }
